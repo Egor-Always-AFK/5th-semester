@@ -37,9 +37,7 @@ int main(int argc, char **argv) {
 }
 
 void printReviewsByRating(std::vector<std::shared_ptr<Review>> vector) {
-    std::sort(vector.begin(), 
-        vector.end(), 
-        [](std::shared_ptr<Review> reviewPtr_1, std::shared_ptr<Review> reviewPtr_2) {
+    std::sort(vector.begin(), vector.end(), [](std::shared_ptr<Review> reviewPtr_1, std::shared_ptr<Review> reviewPtr_2) {
             return reviewPtr_1.get()->getRating() > reviewPtr_2.get()->getRating();
     });
     
