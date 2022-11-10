@@ -1,6 +1,6 @@
 NAME = control
 
-CC = clang++ 
+CC = c++ 
 
 # CFLAGS = -Wall -Wextra -Werror
 
